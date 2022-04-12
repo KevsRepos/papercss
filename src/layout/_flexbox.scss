@@ -4,8 +4,8 @@ $number-columns: 12;
   @include resp($min: $breakpoint) {
     @for $i from 1 through $number-columns {
       .#{$colName}-#{$i} {
-        flex: 0 0 $i * 100% / $number-columns;
-        max-width: $i * 100% / $number-columns;
+        flex: 0 0 calc($i * 100% / $number-columns);
+        max-width: calc($i * 100% / $number-columns);
       }
     }
   }

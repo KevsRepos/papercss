@@ -57,8 +57,8 @@ $warning-text: $warning-dark-10 !default;
 $danger-text: $danger-dark-10 !default;
 $muted-text: $muted-dark-10 !default;
 
-$shadow-color-regular: hsla(0, 0, 0%, 0.2) !default;
-$shadow-color-hover: hsla(0, 0, 0%, 0.3) !default;
+$shadow-color-regular: hsla(0, 0%, 0%, 0.2) !default;
+$shadow-color-hover: hsla(0, 0%, 0%, 0.3) !default;
 
 $primary-inverse: #fff !default;
 
@@ -119,8 +119,8 @@ $dark-warning-text: $dark-warning-dark-10 !default;
 $dark-danger-text: $dark-danger-dark-10 !default;
 $dark-muted-text: $dark-muted-dark-10 !default;
 
-$dark-shadow-color-regular: hsla(0, 0, 0%, 0.2) !default;
-$dark-shadow-color-hover: hsla(0, 0, 0%, 0.3) !default;
+$dark-shadow-color-regular: hsla(0, 0%, 0%, 0.2) !default;
+$dark-shadow-color-hover: hsla(0, 0%, 0%, 0.3) !default;
 
 $dark-primary-inverse: $primary !default;
 
@@ -275,8 +275,6 @@ $colors: (primary, $primary, $primary-light, $primary-text),
 
 // Font settings
 $global-font-size: 20px !default;
-$header-font: 'Patrick Hand SC' !default;
-$body-font: 'Neucha' !default;
 $font-color: $primary !default;
 
 // Responsive breakpoints
