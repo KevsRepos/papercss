@@ -11,13 +11,8 @@ const log = require('./log');
 
 async function build() {
   log('Starting PaperCSS build...');
-  log('Cleaning "dist/, docs/static/assets/paper.css" folder...');
 
   rimraf.sync('dist', { disableGlob: true });
-
-  if (fs.existsSync(constants.PAPER_DOCS_PATH)) {
-    fs.unlinkSync(constants.PAPER_DOCS_PATH);
-  }
 
   log('Compiling SCSS to CSS, entrypoint:', constants.ENTRYPOINT_PATH);
 
@@ -31,11 +26,10 @@ async function build() {
 
   const minifiedCSS = await postcss([cssnano]).process(autoprefixedCSS.css, { from: undefined });
 
-  log('Writing paper.css and paper.min.css files to dist/ and docs/ folders...');
+  log('Writing paper.css and paper.min.css files to dist/ ...');
 
   write(constants.PAPER_DIST_PATH, autoprefixedCSS.css);
   write(constants.PAPER_DIST_MIN_PATH, minifiedCSS.css);
-  write(constants.PAPER_DOCS_PATH, autoprefixedCSS.css);
 
   log('Build done!');
 }
