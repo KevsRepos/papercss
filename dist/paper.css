@@ -3,7 +3,6 @@
 /**
   Global PaperCSS Config
 */
-@import url("https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC");
 html {
   --primary: #41403e;
   --secondary: #0071de;
@@ -50,8 +49,8 @@ html {
   --warning-text: #cab925;
   --danger-text: #7f2722;
   --muted-text: #6c757d;
-  --shadow-color-regular: rgba(0, 0, 0, 0.2);
-  --shadow-color-hover: rgba(0, 0, 0, 0.3);
+  --shadow-color-regular: hsla(0deg, 0%, 0%, 0.2);
+  --shadow-color-hover: hsla(0deg, 0%, 0%, 0.3);
   --primary-inverse: #fff;
 }
 
@@ -101,8 +100,8 @@ html.dark {
   --warning-text: #cab925;
   --danger-text: #ff5c53;
   --muted-text: #6c757d;
-  --shadow-color-regular: rgba(0, 0, 0, 0.2);
-  --shadow-color-hover: rgba(0, 0, 0, 0.3);
+  --shadow-color-regular: hsla(0deg, 0%, 0%, 0.2);
+  --shadow-color-hover: hsla(0deg, 0%, 0%, 0.3);
   --primary-inverse: #41403e;
 }
 
@@ -518,7 +517,7 @@ hr::after {
   background-color: #41403e;
   background-color: var(--main-background);
   border: 1px solid #c1c0bd;
-  box-shadow: -1px 5px 35px -9px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 5px 35px -9px hsla(0deg, 0%, 0%, 0.2);
   margin-bottom: 1rem;
   margin-top: 1rem;
   padding: 2rem;
@@ -963,25 +962,7 @@ pre code {
 html {
   color: #41403e;
   color: var(--primary);
-  font-family: "Neucha", sans-serif;
   font-size: 20px;
-}
-
-p,
-a,
-button,
-li,
-table,
-thead,
-tbody,
-th,
-tr,
-td,
-input,
-textarea,
-select,
-option {
-  font-family: "Neucha", sans-serif;
 }
 
 h1,
@@ -990,7 +971,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Patrick Hand SC", sans-serif;
   font-weight: normal;
 }
 
@@ -1262,24 +1242,24 @@ table.table-alternating tbody tr:nth-of-type(even) {
 
 .shadow {
   transition: all 235ms ease 0s;
-  box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 28px 25px -18px hsla(0deg, 0%, 0%, 0.2);
 }
 .shadow.shadow-large {
   transition: all 235ms ease 0s;
-  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 38px 34px -26px hsla(0deg, 0%, 0%, 0.2);
 }
 .shadow.shadow-small {
   transition: all 235ms ease 0s;
-  box-shadow: 10px 19px 17px -13px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 19px 17px -13px hsla(0deg, 0%, 0%, 0.2);
 }
 .shadow.shadow-hover:hover {
   transform: translate3d(0, 2px, 0);
-  box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 8px 8px -5px hsla(0deg, 0%, 0%, 0.3);
 }
 
 .child-shadows > * {
   transition: all 235ms ease 0s;
-  box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 28px 25px -18px hsla(0deg, 0%, 0%, 0.2);
 }
 
 .child-shadows .shadow-none {
@@ -1288,11 +1268,11 @@ table.table-alternating tbody tr:nth-of-type(even) {
 
 .child-shadows-hover > * {
   transition: all 235ms ease 0s;
-  box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 28px 25px -18px hsla(0deg, 0%, 0%, 0.2);
 }
 .child-shadows-hover > *:hover {
   transform: translate3d(0, 2px, 0);
-  box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 8px 8px -5px hsla(0deg, 0%, 0%, 0.3);
 }
 
 /* Components */
@@ -1618,7 +1598,7 @@ button,
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
   transition: all 235ms ease 0s;
-  box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 28px 25px -18px hsla(0deg, 0%, 0%, 0.2);
   transition: all 235ms ease-in-out 0s;
   color: #41403e;
   color: var(--primary);
@@ -1650,7 +1630,7 @@ button.btn-large,
 .paper-btn.btn-large,
 [type=button].btn-large {
   transition: all 235ms ease 0s;
-  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 38px 34px -26px hsla(0deg, 0%, 0%, 0.2);
   font-size: 2rem;
   padding: 1rem;
 }
@@ -1658,7 +1638,7 @@ button.btn-small,
 .paper-btn.btn-small,
 [type=button].btn-small {
   transition: all 235ms ease 0s;
-  box-shadow: 10px 19px 17px -13px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 19px 17px -13px hsla(0deg, 0%, 0%, 0.2);
   font-size: 0.75rem;
   padding: 0.5rem;
 }
@@ -1672,7 +1652,7 @@ button:hover,
 .paper-btn:hover,
 [type=button]:hover {
   transform: translate3d(0, 2px, 0);
-  box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 8px 8px -5px hsla(0deg, 0%, 0%, 0.3);
 }
 button:focus,
 .paper-btn:focus,
@@ -1681,12 +1661,12 @@ button:focus,
   border-color: var(--secondary);
   border-style: solid;
   border-width: 2px;
-  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 8px 4px -6px hsla(0deg, 0%, 0%, 0.3);
 }
 button:active,
 .paper-btn:active,
 [type=button]:active {
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: hsla(0deg, 0%, 0%, 0.2);
   transition: none;
 }
 button.disabled, button[disabled],
@@ -1925,7 +1905,7 @@ button.btn-muted-outline:hover:active,
 
 .card {
   transition: all 235ms ease 0s;
-  box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 28px 25px -18px hsla(0deg, 0%, 0%, 0.2);
   border-color: #41403e;
   border-color: var(--muted-light);
   -webkit-backface-visibility: hidden;
@@ -1940,7 +1920,7 @@ button.btn-muted-outline:hover:active,
 }
 .card:hover {
   transform: translate3d(0, 2px, 0);
-  box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 8px 8px -5px hsla(0deg, 0%, 0%, 0.3);
 }
 .card .card-header,
 .card .card-footer {
@@ -2604,7 +2584,7 @@ fieldset.form-group {
   border-color: #41403e;
   border-color: var(--primary);
   border: 2px solid;
-  box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 8px 8px -5px hsla(0deg, 0%, 0%, 0.3);
   height: 1.2rem;
   overflow: hidden;
   width: 100%;
