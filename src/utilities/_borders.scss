@@ -1,3 +1,7 @@
+.border-none {
+  border: none;
+}
+
 .border {
   @include color('border-color','primary' );
   border-style: solid;

@@ -1,3 +1,7 @@
+.shadow-none {
+  box-shadow: none;
+}
+
 .shadow {
   @include shadow();
 
