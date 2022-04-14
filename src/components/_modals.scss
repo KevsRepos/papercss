@@ -1,4 +1,4 @@
-.modal {
+.ppr-modal {
   @include transition(opacity);
   background: rgba(#000, 0.6);
   bottom: 0;
@@ -23,7 +23,7 @@
     top: 0;
   }
 
-  .modal-body {
+  .ppr-modal-body {
     @include color('color', 'primary');
     @include color('background', 'main-background');
     @include color('border-color', 'muted-light');
@@ -43,7 +43,7 @@
     }
   }
 
-  .btn-close {
+  .ppr-btn-close {
     @include color('color', 'primary-light');
     @include transition;
     cursor: pointer;
@@ -63,36 +63,36 @@
   }
 
   h4,
-  .modal-title {
+  .ppr-modal-title {
     margin-bottom: 0.5rem;
     margin-top: 0;
   }
 
   h5,
-  .modal-subtitle {
+  .ppr-modal-subtitle {
     @include color('color', 'secondary');
     margin-bottom: 0.5rem;
     margin-top: 0;
   }
 
   p,
-  .modal-text {
+  .ppr-modal-text {
     margin-bottom: 1rem;
     margin-top: 0;
   }
 
-  .modal-link+.modal-link,
+  .ppr-modal-link+.ppr-modal-link,
   a+a {
     margin-left: 1.25rem;
   }
 
-  .paper-btn {
+  .ppr-paper-btn {
     @include color('background', 'main-background');
     display: inline-block;
     text-decoration: none;
   }
 
-  .modal-link,
+  .ppr-modal-link,
   a {
     background-image: linear-gradient(5deg, transparent 65%, $secondary 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $secondary 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $secondary 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $secondary 35%, transparent 50%);
     background-position: 0 90%;
@@ -110,14 +110,14 @@
   }
 }
 
-.modal-state {
+.ppr-modal-state {
   display: none;
 
-  &:checked+.modal {
+  &:checked+.ppr-modal {
     opacity: 1;
     visibility: visible;
 
-    .modal-body {
+    .ppr-modal-body {
       top: 50%;
     }
   }

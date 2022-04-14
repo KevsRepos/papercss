@@ -21,9 +21,9 @@ textarea {
     border-width: 2px;
   }
 
-  &.disabled,
+  &.ppr-disabled,
   &[disabled] {
-    @extend .disabled;
+    @extend .ppr-disabled;
   }
 }
 
@@ -31,12 +31,12 @@ select {
   height: 2.35rem;
 }
 
-.disabled {
+.ppr-disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-.form-group {
+.ppr-form-group {
   margin-bottom: 1rem;
 
   > label,
@@ -45,7 +45,7 @@ select {
     margin-bottom: 0.5rem;
   }
 
-  .input-block {
+  .ppr-input-block {
     width: 100%;
   }
 
@@ -54,13 +54,13 @@ select {
     max-width: 100%;
   }
 
-  textarea.no-resize {
+  textarea.ppr-no-resize {
     resize: none;
   }
 
   // TODO: make these classes implicit. We can find out what class to apply based on its type
-  .paper-radio,
-  .paper-check {
+  .ppr-paper-radio,
+  .ppr-paper-check {
     cursor: pointer;
     display: block;
     margin-bottom: 0.5rem;
@@ -126,22 +126,22 @@ select {
     }
   }
 
-  .paper-switch-label,
-  .paper-switch-2-label {
+  .ppr-paper-switch-label,
+  .ppr-paper-switch-2-label {
     cursor: pointer;
     float: left;
   }
 
-  .paper-switch-label {
+  .ppr-paper-switch-label {
     margin: -6px 10px 0 0;
   }
 
-  .paper-switch-2-label {
+  .ppr-paper-switch-2-label {
     margin: 0 10px 0 0;
   }
 
-  .paper-switch,
-  .paper-switch-2 {
+  .ppr-paper-switch,
+  .ppr-paper-switch-2 {
     display: block;
     float: left;
     margin: 0 10px 0 0;
@@ -152,21 +152,21 @@ select {
       opacity: 0;
       width: 0;
 
-      &:checked + .paper-switch-slider {
+      &:checked + .ppr-paper-switch-slider {
         @include color('background-color', 'success-light');
       }
 
-      &:checked + .paper-switch-slider::before {
+      &:checked + .ppr-paper-switch-slider::before {
         transform: translateX(26px);
       }
 
-      &:focus + .paper-switch-slider {
+      &:focus + .ppr-paper-switch-slider {
         box-shadow: 0 0 3px $secondary;
       }
 
     }
 
-    .paper-switch-slider {
+    .ppr-paper-switch-slider {
       @include color('border-color', 'primary');
       border-bottom-left-radius: 15px 255px;
       border-bottom-right-radius: 225px 15px;
@@ -196,7 +196,7 @@ select {
 
     }
 
-    .paper-switch-slider.round {
+    .ppr-paper-switch-slider.round {
       @include color('border-color', 'primary');
       border-bottom-left-radius: 0.7rem 1rem;
       border-bottom-right-radius: 1rem 0.9rem;
@@ -218,11 +218,11 @@ select {
 
   }
 
-  .paper-switch {
+  .ppr-paper-switch {
     height: 12px;
     width: 60px;
 
-    .paper-switch-slider {
+    .ppr-paper-switch-slider {
       &::before {
         bottom: -6px;
         height: 20px;
@@ -231,7 +231,7 @@ select {
 
     }
 
-    .paper-switch-slider.round {
+    .ppr-paper-switch-slider.ppr-round {
       &::before {
         bottom: -7px;
         height: 23px;
@@ -242,11 +242,11 @@ select {
 
   }
 
-  .paper-switch-2 {
+  .ppr-paper-switch-2 {
     height: 22px;
     width: 50px;
 
-    .paper-switch-slider {
+    .ppr-paper-switch-slider {
       &::before {
         bottom: 2px;
         height: 14px;
@@ -255,7 +255,7 @@ select {
 
     }
 
-    .paper-switch-slider.round {
+    .ppr-paper-switch-slider.ppr-round {
       &::before {
         bottom: 2px;
         height: 14px;
@@ -266,7 +266,7 @@ select {
 
   }
 
-  .paper-switch-tile {
+  .ppr-paper-switch-tile {
     cursor: pointer;
     display: block;
     float: left;
@@ -279,12 +279,12 @@ select {
     width: 80px;
 
     &:hover {
-      .paper-switch-tile-card {
+      .ppr-paper-switch-tile-card {
         box-shadow: 2px 8px 4px -5px rgba(0, 0, 0, 0.2);
         transform: rotateX(30deg);
       }
 
-      &:checked + .paper-switch-tile-card {
+      &:checked + .ppr-paper-switch-tile-card {
         background-color: transparent;
         box-shadow: 0 10px 15px -15px rgba(0, 0, 0, 0.9);
         transform: rotateX(150deg);
@@ -295,7 +295,7 @@ select {
     input {
       display: none;
 
-      &:checked + .paper-switch-tile-card {
+      &:checked + .ppr-paper-switch-tile-card {
         transform: rotateX(180deg);
       }
 
@@ -303,7 +303,7 @@ select {
 
   }
 
-  .paper-switch-tile-card {
+  .ppr-paper-switch-tile-card {
     background-color: transparent;
     border-color: transparent;
     height: 100%;
@@ -322,7 +322,7 @@ select {
       width: 100%;
     }
 
-    .paper-switch-tile-card-back {
+    .ppr-paper-switch-tile-card-back {
       transform: rotateX(180deg);
     }
 
@@ -437,7 +437,7 @@ select {
 
 }
 
-fieldset.form-group {
+fieldset.ppr-form-group {
   border: 0;
   padding: 0;
 }

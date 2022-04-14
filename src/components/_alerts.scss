@@ -8,7 +8,7 @@
   }
 }
 
-.alert {
+.ppr-alert {
   @include color('border-color', 'primary');
   @include border-style();
   border-style: solid;
@@ -17,7 +17,7 @@
   padding: 15px;
   width: 100%;
 
-  &.dismissible {
+  &.ppr-dismissible {
     @include transition;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@
     overflow: hidden;
   }
 
-  .btn-close {
+  .ppr-btn-close {
     @include transition;
     @include btn-close-color(primary);
     cursor: pointer;
@@ -34,21 +34,21 @@
 }
 
 @each $color-name, $color, $color-light, $color-text in $colors {
-  .alert-#{$color-name} {
+  .ppr-alert-#{$color-name} {
     @include color('color', #{$color-name}-text);
     @include color('background-color', #{$color-name}-light);
     @include color('border-color', $color-name);
 
-    .btn-close {
+    .ppr-btn-close {
       @include btn-close-color($color-name);
     }
   }
 }
 
-.alert-state {
+.ppr-alert-state {
   display: none;
 
-  &:checked + .dismissible {
+  &:checked + .ppr-dismissible {
     border-width: 0;
     margin: 0;
     max-height: 0;

@@ -1,4 +1,4 @@
-.progress {
+.ppr-progress {
   @include border-style(5);
   @include color('border-color', 'primary');
   border: 2px solid;
@@ -7,7 +7,7 @@
   overflow: hidden;
   width: 100%;
 
-  .bar {
+  .ppr-bar {
     @include border-style(5);
     @include transition;
     @include color('background-color', 'primary-light');
@@ -21,7 +21,7 @@
     text-align: center;
     width: 0%;
 
-    &.striped {
+    &.ppr-striped {
       @include striped-background($primary-light);
     }
 
@@ -41,8 +41,8 @@
       }
     }
   
-    &.w-0,
-    &.w-100 {
+    &.ppr-w-0,
+    &.ppr-w-100 {
       border-right: 0;
     }
   }

@@ -1,36 +1,36 @@
-.shadow-none {
+.ppr-shadow-none {
   box-shadow: none;
 }
 
-.shadow {
+.ppr-shadow {
   @include shadow();
 
-  &.shadow-large {
+  &.ppr-shadow-large {
     @include shadow(large);
   }
 
-  &.shadow-small {
+  &.ppr-shadow-small {
     @include shadow(small);
   }
 
-  &.shadow-hover {
+  &.ppr-shadow-hover {
     &:hover {
       @include shadow(hover);
     }
   }
 }
 
-.child-shadows > * {
+.ppr-child-shadows > * {
   @include shadow();
 }
 
-.child-shadows {
-  .shadow-none {
+.ppr-child-shadows {
+  .ppr-shadow-none {
     box-shadow: none;
   }
 }
 
-.child-shadows-hover > * {
+.ppr-child-shadows-hover > * {
   @include shadow();
 
   &:hover {

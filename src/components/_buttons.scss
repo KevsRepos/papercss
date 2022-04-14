@@ -1,5 +1,5 @@
 button,
-.paper-btn,
+.ppr-paper-btn,
 [type='button'] {
   @include border-style();
   @include shadow();
@@ -24,19 +24,19 @@ button,
     text-align: center;
   }
 
-  &.btn-large {
+  &.ppr-btn-large {
     @include shadow(large);
     font-size: 2rem;
     padding: 1rem;
   }
 
-  &.btn-small {
+  &.ppr-btn-small {
     @include shadow(small);
     font-size: 0.75rem;
     padding: 0.5rem;
   }
 
-  &.btn-block {
+  &.ppr-btn-block {
     display: block;
     width: 100%;
   }
@@ -57,7 +57,7 @@ button,
     transition: none;
   }
 
-  &.disabled,
+  &.ppr-disabled,
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.5;
@@ -79,9 +79,9 @@ a {
 }
 
 @each $colorName, $color, $color-light, $color-text in $colors {
-  button.btn-#{$colorName},
-  .paper-btn.btn-#{$colorName},
-  [type='button'].btn-#{$colorName} {
+  button.ppr-btn-#{$colorName},
+  .ppr-paper-btn.ppr-btn-#{$colorName},
+  [type='button'].ppr-btn-#{$colorName} {
     @include color('color', #{$colorName}-text);
     @include color('background-color', #{$colorName}-light);
     @include color('border-color', #{$colorName});
@@ -95,9 +95,9 @@ a {
 }
 
 @each $colorName, $color, $color-light, $color-text in $colors {
-  button.btn-#{$colorName}-outline,
-  .paper-btn.btn-#{$colorName}-outline,
-  [type='button'].btn-#{$colorName}-outline {
+  button.ppr-btn-#{$colorName}-outline,
+  .ppr-paper-btn.ppr-btn-#{$colorName}-outline,
+  [type='button'].ppr-btn-#{$colorName}-outline {
     background-color: $white;
     border-color: darken($color-light, 10%);
     @if $colorName == primary {

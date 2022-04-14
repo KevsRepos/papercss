@@ -1,4 +1,4 @@
-.collapsible {
+.ppr-collapsible {
   display: flex;
   flex-direction: column;
 
@@ -8,7 +8,7 @@
     border-top-width: 1px;
   }
 
-  .collapsible-body {
+  .ppr-collapsible-body {
     @include color('border-bottom-color', 'muted-light');
     @include color('background-color', 'white-dark-light-80');
     @include transition;
@@ -28,7 +28,7 @@
       @include color('color', 'primary');
     }
 
-    &[id^='collapsible']:checked~div.collapsible-body {
+    &[id^='collapsible']:checked~div.ppr-collapsible-body {
       margin: 0;
       max-height: 960px;
       opacity: 1;

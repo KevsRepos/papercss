@@ -16,7 +16,7 @@
 }
 
 @each $colorName, $color in $colors {
-  .badge.#{$colorName} {
+  .ppr-badge.#{$colorName} {
     @include color('background-color', #{$colorName});
   }
 }

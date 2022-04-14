@@ -10,9 +10,9 @@ nav {
     display: block;
   }
 
-  .bar1,
-  .bar2,
-  .bar3 {
+  .ppr-bar1,
+  .ppr-bar2,
+  .ppr-bar3 {
     @include color('background-color', 'primary');
     @include color('border-color', 'primary');
     @include color('color', 'primary');
@@ -23,26 +23,26 @@ nav {
     width: 2rem;
   }
 
-  .collapsible input[id^=collapsible]:checked + button, // Leaving for backwards compatibility. See docs for proper usage
-  .collapsible input[id^=collapsible]:checked + label {
-    .bar1 {
+  .ppr-collapsible input[id^=collapsible]:checked + button, // Leaving for backwards compatibility. See docs for proper usage
+  .ppr-collapsible input[id^=collapsible]:checked + label {
+    .ppr-bar1 {
       transform: rotate(-45deg) translate(-9px, 7px);
     }
 
-    .bar2 {
+    .ppr-bar2 {
       opacity: 0;
     }
 
-    .bar3 {
+    .ppr-bar3 {
       transform: rotate(45deg) translate(-8px, -9px);
     }
   }
 
-  &.split-nav {
+  &.ppr-split-nav {
     justify-content: space-between;
   }
 
-  &.fixed {
+  &.ppr-fixed {
     left: 0;
     position: fixed;
     right: 0;
@@ -53,13 +53,13 @@ nav {
     margin: 0 1rem;
   }
 
-  ul.inline {
+  ul.ppr-inline {
     margin-bottom: 0;
     margin-top: 10px;
     padding: 0;
   }
 
-  ul.inline li {
+  ul.ppr-inline li {
     display: inline-block;
     margin: 0 0.5rem;
 
@@ -86,11 +86,11 @@ nav {
     border-bottom-width: 5px;
   }
 
-  ul.inline li a {
+  ul.ppr-inline li a {
     font-size: 1.3rem;
   }
 
-  ul.inline li::before {
+  ul.ppr-inline li::before {
     content: '';
   }
 
@@ -100,7 +100,7 @@ nav {
     }
   }
 
-  .nav-brand {
+  .ppr-nav-brand {
     h1,
     h2,
     h3,
@@ -112,21 +112,21 @@ nav {
     }
   }
 
-  .collapsible {
+  .ppr-collapsible {
     @include resp(small) {
       width: 100%;
     }
   }
 
-  .collapsible input[id^=collapsible]:checked ~ div.collapsible-body {
+  .ppr-collapsible input[id^=collapsible]:checked ~ div.ppr-collapsible-body {
     margin: 0;
     max-height: 960px;
     opacity: 1;
     padding: 0;
   }
 
-  .collapsible:nth-of-type(1),
-  .collapsible .collapsible-body {
+  .ppr-collapsible:nth-of-type(1),
+  .ppr-collapsible .ppr-collapsible-body {
     border: 0;
 
     @include resp(null, $small-screen + 1px) {
@@ -134,11 +134,11 @@ nav {
     }
   }
 
-  div.collapsible-body {
+  div.ppr-collapsible-body {
     padding: none;
   }
 
-  .collapsible label {
+  .ppr-collapsible label {
     @include color('border-color', 'primary');
 
     border-bottom-left-radius: 15px 255px;
@@ -149,13 +149,13 @@ nav {
     border-width: 2px;
   }
 
-  .collapsible > button {
+  .ppr-collapsible > button {
     // Leaving for backwards compatibility. See docs for proper usage
     border: 0;
   }
 
-  .collapsible > button, // Leaving for backwards compatibility. See docs for proper usage
-  .collapsible > label {
+  .ppr-collapsible > button, // Leaving for backwards compatibility. See docs for proper usage
+  .ppr-collapsible > label {
     @include color('background-color', 'main-background');
     display: none;
     font-size: 0.5rem;
