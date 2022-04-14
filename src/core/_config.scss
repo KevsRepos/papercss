@@ -3,13 +3,21 @@
 */
 
 // Set theme colors
-$primary: #41403e !default;
-$secondary: #0071de !default;
+
+/* SCSS HEX */
+$rich-black-fogra-39: #050505ff;
+$violet-blue: #314cb6ff;
+$cultured: #f8f7f9ff;
+$gray-web: #817f82ff;
+$cyan-process: #01baefff;
+
+$primary: $violet-blue !default;
+$secondary: $cyan-process !default;
 
 $success: #86a361 !default;
 $warning: #ddcd45 !default;
 $danger: #a7342d !default;
-$muted: #868e96 !default;
+$muted: $gray-web !default;
 
 $primary-light: lighten($primary, 50%) !default;
 $secondary-light: lighten($secondary, 50%) !default;
@@ -42,12 +50,12 @@ $muted-dark-10: darken($muted, 10%) !default;
 $primary-shaded-70: lighten($primary, 70%) !default;
 $primary-shaded-50: lighten($primary, 50%) !default;
 
-$white-dark: rgba(#000, 0.03) !default;
+$white-dark: rgba($rich-black-fogra-39, 0.03) !default;
 $white-dark-light-80: lighten($white-dark, 80%) !default;
-$light-dark: rgba(#000, 0.7) !default;
-$white: rgba(#fff, 1) !default;
-$main-background: rgba(#fff, 1) !default;
-$black: rgba(#000, 1) !default;
+$light-dark: rgba($rich-black-fogra-39, 0.7) !default;
+$white: rgba($cultured, 1) !default;
+$main-background: rgba($cultured, 1) !default;
+$black: rgba($rich-black-fogra-39, 1) !default;
 $main-background-light: lighten($main-background, 50%) !default;
 
 $primary-text: $primary-dark-10 !default;
@@ -60,18 +68,18 @@ $muted-text: $muted-dark-10 !default;
 $shadow-color-regular: hsla(0, 0%, 0%, 0.2) !default;
 $shadow-color-hover: hsla(0, 0%, 0%, 0.3) !default;
 
-$primary-inverse: #fff !default;
+$primary-inverse: $cultured !default;
 
 
 // Set dark theme colors
 
-$dark-primary: #fff !default;
-$dark-secondary: #0071de !default;
+$dark-primary: $violet-blue !default;
+$dark-secondary: $cyan-process !default;
 
 $dark-success: #189418 !default;
 $dark-warning: #ddcd45 !default;
 $dark-danger: #ff8c86 !default;
-$dark-muted: #868e96 !default;
+$dark-muted: $gray-web !default;
 
 $dark-primary-light: lighten($dark-primary, 5%) !default;
 $dark-secondary-light: lighten($dark-secondary, 5%) !default;
@@ -104,13 +112,13 @@ $dark-muted-dark-10: darken($dark-muted, 10%) !default;
 $dark-primary-shaded-70: darken($primary, 7%) !default;
 $dark-primary-shaded-50: darken($primary, 5%) !default;
 
-$dark-white-dark: rgba(#fff, 0.03) !default;
+$dark-white-dark: rgba($cultured, 0.03) !default;
 $dark-white-dark-light-80: lighten($dark-white-dark, 80%) !default;
-$dark-light-dark: rgba(#fff, 0.7) !default;
-$dark-white: rgba(#fff, 1) !default;
+$dark-light-dark: rgba($cultured, 0.7) !default;
+$dark-white: rgba($cultured, 1) !default;
 $dark-main-background: rgba($primary, 1) !default;
 $dark-main-background-light: lighten($dark-main-background, 50%) !default;
-$dark-black: rgba(#000, 1) !default;
+$dark-black: rgba($rich-black-fogra-39, 1) !default;
 
 $dark-primary-text: $primary !default;
 $dark-secondary-text: $dark-secondary-dark-10 !default;
