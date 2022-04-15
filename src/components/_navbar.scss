@@ -72,7 +72,6 @@ nav {
   a {
     @include color('color', 'primary');
     @include color('border-bottom-color', 'primary');
-    background-image: none;
     border-bottom-left-radius: 15px 3px;
     border-bottom-right-radius: 15px 5px;
     border-bottom-style: solid;
