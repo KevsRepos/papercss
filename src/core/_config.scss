@@ -5,6 +5,8 @@
 // Set theme colors
 
 /* SCSS HEX */
+
+/* root colors */
 $rich-black-fogra-39: #050505ff;
 $violet-blue: #314cb6ff;
 $cultured: #f8f7f9ff;
@@ -19,6 +21,8 @@ $warning: #ddcd45 !default;
 $danger: #a7342d !default;
 $muted: $gray-web !default;
 
+
+/* calculated */
 $primary-light: lighten($primary, 50%) !default;
 $secondary-light: lighten($secondary, 50%) !default;
 $success-light: lighten($success, 30%) !default;
@@ -72,7 +76,6 @@ $primary-inverse: $cultured !default;
 
 
 // Set dark theme colors
-
 $dark-primary: $violet-blue !default;
 $dark-secondary: $cyan-process !default;
 
@@ -116,8 +119,8 @@ $dark-white-dark: rgba($cultured, 0.03) !default;
 $dark-white-dark-light-80: lighten($dark-white-dark, 80%) !default;
 $dark-light-dark: rgba($cultured, 0.7) !default;
 $dark-white: rgba($cultured, 1) !default;
-$dark-main-background: rgba($primary, 1) !default;
-$dark-main-background-light: lighten($dark-main-background, 50%) !default;
+$dark-main-background: rgba($black, 1) !default;
+$dark-main-background-light: lighten($black, 50%) !default;
 $dark-black: rgba($rich-black-fogra-39, 1) !default;
 
 $dark-primary-text: $primary !default;
