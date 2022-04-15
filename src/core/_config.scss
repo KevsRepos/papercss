@@ -272,11 +272,11 @@ $colors: (primary, $primary, $primary-light, $primary-text),
   based on the $colors map above.
 */
 @each $colorName, $color, $color-light in $colors {
-  .text-#{$colorName} {
+  .ppr-text-#{$colorName} {
     @include color('color',#{$colorName});
   }
 
-  .background-#{$colorName} {
+  .ppr-background-#{$colorName} {
     @include color('background-color',#{$colorName}-light);
   }
 }

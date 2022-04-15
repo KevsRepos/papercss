@@ -1,4 +1,4 @@
-.card {
+.ppr-card {
   @include shadow;
   @include color('border-color', 'muted-light');
   backface-visibility: hidden;

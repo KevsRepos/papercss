@@ -1,8 +1,9 @@
-.ppr-border-none {
+.ppr-border-none,
+.ppr-border-none:hover{
   border: none;
 }
 
-.border {
+.ppr-border {
   @include color('border-color','primary' );
   border-style: solid;
   border-width: 2px;

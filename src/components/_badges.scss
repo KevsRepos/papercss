@@ -1,4 +1,4 @@
-.badge {
+.ppr-badge {
   @include border-style();
   @include color('color', 'white');
   @include color('background-color', 'muted');
